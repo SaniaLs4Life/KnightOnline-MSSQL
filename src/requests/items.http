@@ -1,0 +1,14 @@
+@api = http://localhost:3000/level
+
+GET {{api}}
+
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "level": "73",
+    "Exp": "550977453"
+}

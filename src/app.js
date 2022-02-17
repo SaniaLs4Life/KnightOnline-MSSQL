@@ -1,12 +1,15 @@
 import express from "express";
 import config from "./config";
 
-import itemsRoute from "./routes/items.route";
+import levelRoutes from "./routes/level.route";
 
 const app = express();
 
 app.set("port", config.PORT);
 
-app.use(itemsRoute);
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+app.use(levelRoutes);
 
 export default app;
