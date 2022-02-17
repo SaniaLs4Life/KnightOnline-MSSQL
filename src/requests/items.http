@@ -5,6 +5,27 @@ GET {{api}}
 
 ###
 
+# PUT {{api}}/73
+# Content-Type: application/json
+
+# {
+#     "level": "74",
+#     "Exp": "550977453"
+# }
+
+
+###
+
+
+DELETE {{api}}/73
+
+###
+
+
+GET {{api}}/73
+
+###
+
 POST {{api}}
 Content-Type: application/json
 
@@ -12,3 +33,4 @@ Content-Type: application/json
     "level": "73",
     "Exp": "550977453"
 }
+
